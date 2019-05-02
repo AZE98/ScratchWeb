@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    body,html{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background-color: #777;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    .wrapper{
+        width: 100%;
+        height: 100%;
+        display: flex;
+    }
+    .wrapper .left,
+    .wrapper .right{
+        width: 50%;
+        box-sizing: border-box;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .wrapper .left{
+        background-color: lightpink;
+
+    }
+    .wrapper .right{
+        background-color: lightblue;
+    }
+
+    .wrapper .left a{
+        display: block;
+        color: #fff;
+        font-size: 50px;
+        font-weight: bolder;
+        text-decoration:none;
+        transition: all .2s linear;
+        border-radius: 10px;
+    }
+
+    .wrapper .right a{
+        display: block;
+        text-decoration:none;
+        color: #fff;
+        font-size: 50px;
+        font-weight: bolder;
+        transition: all .2s linear;
+        border-radius: 10px;
+    }
+
+    .wrapper .left a:hover,
+    .wrapper .right a:hover{
+        font-size: 60px;
+        box-shadow:  0 0 15px black;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="left">
+            <a href="./snap/index.html">去编程</a>
+        </div>
+        <div class="right">
+            <a href="./html/index.html">家长入口</a>
+        </div>
+    </div>
+</body>
+</html>
